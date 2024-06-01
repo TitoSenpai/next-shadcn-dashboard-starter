@@ -1,7 +1,7 @@
 import { Icons } from '@/components/icons';
 import { NavItem, SidebarNavItem } from '@/types';
 
-export type User = {
+export type Hero = {
   id: number;
   name: string;
   company: string;
@@ -9,7 +9,7 @@ export type User = {
   verified: boolean;
   status: string;
 };
-export const users: User[] = [
+export const heroes: Hero[] = [
   {
     id: 1,
     name: 'Candice Schiner',
@@ -117,12 +117,6 @@ export const navItems: NavItem[] = [
     href: '/dashboard',
     icon: 'dashboard',
     label: 'Dashboard'
-  },
-  {
-    title: 'Heroes',
-    href: '/dashboard/hero',
-    icon: 'user',
-    label: 'hero'
   },
   {
     title: 'User',
